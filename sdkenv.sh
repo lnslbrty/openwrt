@@ -38,6 +38,16 @@ export PKG_CONFIG="${STAGING_DIR}/host/bin/pkg-config.real"
 export PKG_CONFIG_PATH="${TARGET_DIR}/usr/lib/pkgconfig"
 export PKG_CONFIG_LIBDIR="${TARGET_DIR}/usr/lib/pkgconfig"
 
+# CMake variables
+export CMAKE_C_COMPILER_AR="${HOST}-ar"
+export CMAKE_C_COMPILER_RANLIB="${HOST}-ranlib"
+export CMAKE_LINKER="${HOST}-ld"
+export CMAKE_NM="${HOST}-nm"
+export CMAKE_OBJCOPY="${HOST}-objcopy"
+export CMAKE_OBJDUMP="${HOST}-objdump"
+export CMAKE_RANLIB="${HOST}-ranlib"
+export CMAKE_STRIP="${HOST}-strip"
+
 # set some optional CGO vars for xcompile
 export CGO_ENABLED=1
 export GO_EXTLINK_ENABLED=1
